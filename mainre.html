@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Result</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+</head>
+<body>
+    <h1>Upload an excel file to convert into JSON</h1>
+    <input type="file" id="file_upload" />
+    <button onclick="upload(this.id)" id="autofill">Auto Fill</button>  
+    <br>
+    <br>
+    <!-- container to display the json result -->
+    <!-- <textarea id="json-result" style="display:none;height:500px;width:350px;"></textarea> -->
+    <div id="msg"></div>
+    <form name="Form"   method="post"> 
+        <!-- <h2>JavaScript Validation</h2> -->
+      
+              <div> ID : <input type="text" id="empid" /></div>  
+              <div> Name  : <input type="text" id="name" /></div>
+              <div> Mobile: <input type="text" id="mno"/></div>
+              <div> Company     : <input type="text" id="com"/></div>
+              <div> Email     : <input type="email" id="email"/> </div>
+              <div> Gender : <input type="text" id="gender"/> </div>
+              <div class="button-flex">
+                <button type="button" onclick="display()">Submit</button>
+                <button type="button" onclick="">Update</button>
+                <button type="button">Add</button>
+              </div>
+              <div> 
+                <textarea id="textarea" cols="30" rows="30"></textarea>
+              </div>
+              <!-- <div> <input type="submit" value="Submit"></div> -->
+          
+    </form>
+
+    <!-- script -->
+    <!-- Method to upload a valid excel file -->
+    <script src="./mainre.js"></script>
+
+</body>
+</html>
